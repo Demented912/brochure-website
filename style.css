@@ -6,6 +6,15 @@
     box-sizing: border-box;
     line-height: 1.6em;
 }
+:root {
+	--blue: #335DFF;
+	--grey: #F5F5F5;
+	--grey-d-1: #EEE;
+	--grey-d-2: #DDD;
+	--grey-d-3: #888;
+	--white: #FFF;
+	--dark: #222;
+}
 .container {
     width: 1080px;
     margin: auto;
@@ -126,9 +135,10 @@ main img {
 .proj-box img {
     width: 100%;
     border-radius: 3px 3px 0  0;
+    transition:transform .2s;
 }
 .proj-box img:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 .proj-box p {
     padding: 10px;
@@ -208,4 +218,43 @@ form button {
 
 #price1{
     color:#39FF14;
+}
+
+
+/*----------------Testimonial--------------*/
+
+.testimonial{
+    padding-top:100px;
+}
+.testimonial .col-3{
+    text-align:center;
+    padding:40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition: transform 0.5s;
+}
+.testimonial img{
+width:50px;
+margin-top:20px;
+border-radius:50%;
+}
+
+.testimonial .col-3:hover{
+    transform:translateY(-10px);
+
+}
+.fa.fa-quote-left{
+    font-size:34px;
+    color: #ff3bbe;
+}
+.col-3 p{
+    font-size:12px;
+    margin:12px 0;
+    color: #ffffff;
+}
+
+.testimonial .col-3 h3{
+    font-weight:600;
+    color:#ffffff;
+    font-size: 16px;
 }
